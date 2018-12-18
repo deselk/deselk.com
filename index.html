@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deselk Studio</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:700|Work+Sans:200,300,500');
+	</style> 
+	<link type="text/stylesheet" href='main.css'>
+</head>
+
+<style>
+
+	body {
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 300;
+		background-color: black;
+		padding: 20px;
+	}
+
+	@media (min-width: 1281px) {
+		body {
+			margin: 20px auto 0px auto;
+			width: 80%;
+		}
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 200;
+	}
+	header {
+		display: flex;
+		font-weight: 300;
+		color: #B3B3B3;
+	}
+	div.logo {
+		width: 20%;
+		height: 18px;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	ul.menu {
+		list-style-type: none;
+		display: flex;
+		/*position: relative;*/
+		/*left: 70%;*/
+		width: 80%;
+		justify-content: flex-end;
+		font-size: 26.88px;
+	}
+	li.menu-item {
+		padding: 0px 40px 0px 40px; 
+	}
+	.block-1 {
+		clear: both;
+	}
+
+	.block-1__heading-1 {
+		font-weight: 200;
+		color: #999999;
+		font-size: 36px;
+	}
+
+	.block-1__heading-1::before {
+		width: 40px;
+	    border-top: 2px solid #FF0000;
+	    height: 5px;
+	    content: "   ";
+	    margin-right: 5px;
+	    display: inline-block;
+	}
+
+	.block-1__heading-2 {
+		color: #ffffff;
+		font-family: 'Old Standard TT', serif;
+		font-weight: 700;
+		font-size: 84px;
+	}
+
+	.block-1__content-1 {
+		font-weight: 300;
+		color: #B3B3B3;
+		font-size: 24px;
+	}
+
+	.block-2__heading-1 {
+		font-family: 500;
+		color: #B3B3B3;
+		font-size: 21px;
+	}
+
+	.block-2__heading-1::after {
+		width: 40px;
+	    border-top: 2px solid #FF0000;
+	    height: 5px;
+	    content: " ";
+	    margin-right: 5px;
+	    display: block;
+	    margin-top: 10px;
+	}
+
+	.block-2__services {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.block-2__services > div {
+		width: 33.33%;
+		height: 300px;
+		padding: 10px;
+		margin: 8px;
+		background: cyan;
+	}
+
+	.block-3__heading-1 {
+		font-weight: 200;
+		color: #B3B3B3;
+		font-size: 36px;
+	}
+
+	.block-3__heading-1::before {
+		width: 40px;
+	    border-top: 2px solid #FF0000;
+	    height: 5px;
+	    content: "   ";
+	    margin-right: 5px;
+	    display: inline-block;
+	}
+
+	.block-3__heading-2 {
+		font-family: 'Old Standard TT', serif;
+		font-weight: 700;
+		color: #ffffff;
+		font-size: 84px;
+	}
+
+
+
+
+	div.portfolio-section-1 {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	div.portfolio-item {
+		height: 200px;
+	}
+
+	div.portfolio-section-1 > div.portfolio-item {
+		width: 33.33%;
+		background: grey;
+		margin: 10px;
+	}
+
+	div.portfolio-section-2 {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	div.portfolio-item-vertical {
+		background: green;
+		width: 32.33%;
+		margin: 10px;
+		height: 400px;
+	}
+
+	div.portfolio-section-inside-1 {
+		display: flex;
+		flex-direction: column;
+		width: 66.66%;
+		margin: 8px;
+		height: 400px;
+	}
+	div.portfolio-item-horizontal {
+		background: brown;
+		height: 50%;
+	}
+
+	div.portfolio-section-inside-2 {
+		display: flex;
+		height: 50%;
+		flex-wrap: nowrap;
+	}
+
+	div.portfolio-section-inside-2 > div.portfolio-item {
+		width: 50%;
+		background: orange;
+		margin: 5px 5px 0px 0px;
+	}
+
+
+	.block-4 {
+
+	}
+
+	.block-4__heading-1 {
+		font-weight: 200;
+		color: #B3B3B3;
+		font-size: 36px;
+	}
+
+	.block-4__heading-1::after {
+		width: 40px;
+	    border-top: 2px solid #FF0000;
+	    height: 5px;
+	    content: " ";
+	    margin-right: 5px;
+	    display: block;
+	    margin-top: 10px;
+	}
+
+	.block-5__section__heading-1 {
+		font-weight: 300;
+		color: #b3b3b3;
+		font-size: 24px;
+	}
+
+	.block-5__section__heading-2 {
+		font-weight: 200;
+		color: #ffffff;
+		font-size: 36px;
+	}
+
+	.block-5__section__heading-2::after {
+		width: 40px;
+	    border-top: 2px solid #FF0000;
+	    height: 5px;
+	    content: " ";
+	    margin-right: 5px;
+	    display: block;
+	    margin-top: 10px;
+	}
+
+	footer {
+		display: flex;
+	}
+	div.footer-logo {
+		width: 20%;
+		height: 18px;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	ul.menu-footer {
+		list-style-type: none;
+		display: flex;
+		/*position: relative;*/
+		/*left: 70%;*/
+		width: 80%;
+		justify-content: flex-end;
+		color: #cccccc;
+	}
+	li.menu-footer-item {
+		padding: 0px 40px 0px 40px; 
+		font-size: 24px;
+	}
+
+	.facebook::after {
+		width: 70px;
+	    border-top: 2px solid #29ABE2;
+	    height: 5px;
+	    content: " ";
+	    margin-right: 5px;
+	    display: block;
+	    margin-top: 10px;
+	}
+	.instagram::after {
+		width: 70px;
+	    border-top: 2px solid #FBB03B;
+	    height: 5px;
+	    content: " ";
+	    margin-right: 5px;
+	    display: block;
+	    margin-top: 10px;
+	}
+</style>
+<body>
+	<header>
+		<div class="logo"></div>
+		<ul class="menu">
+			<li class="menu-item" data-aos="fade-up" data-aos-duration="300">Home</li>
+			<li class="menu-item" data-aos="fade-up" data-aos-duration="400">About Us</li>
+			<li class="menu-item" data-aos="fade-up" data-aos-duration="500">Portfolio</li>
+			<li class="menu-item" data-aos="fade-up" data-aos-duration="600">Contact</li>
+		</il>
+	</header>
+	<div class="block-1">
+		<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Design Studio</h3>
+		<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">Design Inspire Change</h1>
+		<p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p>
+	</div>
+	<div class="block-2">
+		<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">ABOUT US</h4>
+		<div class="block-2__services">
+			<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">Service 1</div>
+			<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">Service 2</div>
+			<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">Service 3</div>
+		</div>
+	</div>
+
+	<div class="block-3">
+		<h3 class="block-3__heading-1" data-aos="fade-up" data-aos-duration="750">Projects</h3>
+		<h2 class="block-3__heading-2" data-aos="fade-up" data-aos-duration="750">Work from Past</h2>
+		<div class="portfolio">
+			<div class="portfolio-section-1">
+				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 1</div>
+				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 2</div>
+				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 3</div>
+			</div>
+			<div class="portfolio-section-2">
+				<div class="portfolio-item-vertical" data-aos="fade-up" data-aos-duration="750">Work 4</div>
+				<div class="portfolio-section-inside-1">
+					<div class="portfolio-item-horizontal" data-aos="fade-up" data-aos-duration="750">Work 5</div>
+					<div class="portfolio-section-inside-2">
+						<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 6</div>
+						<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 7</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-4">
+		<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
+	</div>
+	<div class="block-5">
+		<div class="logo-block-5"></div>
+		<div class="block-5__section">
+			<div class="block-5__section__heading-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</div>
+			<h3 class="block-5__section__heading-2" data-aos="fade-up" data-aos-duration="750">Contact Us</h3>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-logo" data-aos="fade-up" data-aos-duration="750">Deselk Studio Logo</div>
+		<ul class="menu-footer">
+			<li class="menu-footer-item facebook">FACEBOOK</li>
+			<li class="menu-footer-item instagram">INSTAGRAM</li>
+		</ul>
+	</footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

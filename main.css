@@ -1,0 +1,18 @@
+.menu {
+	list-style-type: none;
+}
+
+.services {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.service {
+	width: 33.33%;
+	height: 100px;
+	background: cyan;
+}
+
+.portfolio {
+	display: flex;
+}
