@@ -7,6 +7,10 @@
 	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Old+Standard+TT:700|Work+Sans:200,300,500');
 	</style> 
 	<link type="text/stylesheet" href='main.css'>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1#1A1A1A/slick/slick-theme.css"/>
 </head>
 
 <style>
@@ -107,18 +111,62 @@
 		display: flex;
 		flex-wrap: nowrap;
 	}
+	.block-2__services__heading {
+		position: relative;
+		top: 300px;
+		left: 20px;
+	}
+	.block-2__services__content {
+		position: relative;
+		top: 290px;
+		left: 20px;
+		padding-left: 0px;
+		list-style-type: none;
+	}
+
+	.block-2__services > div > img:hover {
+	}
+
+	img.services-image-1 {
+		width: 300px;
+		height: 450px;
+		position: absolute;
+		filter: grayscale(100%);
+		transition: filter 1s ease-out;
+	}
+
+	img.services-image-2 {
+		position: absolute;
+		width: 300px;
+		height: 450px;
+	}
+
 	.block-2__services > div {
 		width: 33.33%;
-		height: 300px;
+		height: 450px;
 		padding: 10px;
 		margin: 8px;
-		background: cyan;
+		/*background: cyan;*/
+	}
+
+	.block-3 {
+		margin-top: 140px;
+	}
+
+	.block-3__background {
+		position: absolute;
+		width: 100%;
+		height: 1750px;
+		left: 0px;
+		background: white;
+		z-index: -1;
 	}
 
 	.block-3__heading-1 {
-		margin-top: 120px;
+		margin-top: 40px;
+		padding-top: 40px;
 		font-weight: 200;
-		color: #B3B3B3;
+		color: #232323;
 		font-size: 36px;
 	}
 
@@ -135,61 +183,51 @@
 		margin-top: 30px;
 		font-family: 'Playfair Display', serif;
 		font-weight: 700;
-		color: #ffffff;
+		color: #232323;
 		font-size: 70px;
 	}
 
-
-
-
-	div.portfolio-section-1 {
+	div.portfolio {
 		display: flex;
-		flex-wrap: nowrap;
-	}
-	div.portfolio-item {
-		height: 200px;
+		flex-wrap: wrap;
 	}
 
-	div.portfolio-section-1 > div.portfolio-item {
-		width: 33.33%;
-		background: grey;
-		margin: 10px;
+	.portfolio__item {
+		flex: 0 46%;
+		height: 100%;
+		width: 100%;
+		color: fff;
+		padding: 2%;
 	}
 
-	div.portfolio-section-2 {
-		display: flex;
-		flex-wrap: nowrap;
+	.portfolio__item > div > img {
+		width: 100%;
+		height: 500px;
 	}
 
-	div.portfolio-item-vertical {
-		background: green;
-		width: 32.33%;
-		margin: 10px;
-		height: 400px;
+	.portfolio__item-2 {
+		position: relative;
+		top: 30px;
 	}
 
-	div.portfolio-section-inside-1 {
-		display: flex;
-		flex-direction: column;
-		width: 66.66%;
-		margin: 8px;
-		height: 400px;
-	}
-	div.portfolio-item-horizontal {
-		background: brown;
-		height: 50%;
+	.portfolio__item-4 {
+		position: relative;
+		top: 30px;
 	}
 
-	div.portfolio-section-inside-2 {
-		display: flex;
-		height: 50%;
-		flex-wrap: nowrap;
+	.portfolio__item__heading {
+		color: #000;
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 2px;
 	}
 
-	div.portfolio-section-inside-2 > div.portfolio-item {
-		width: 50%;
-		background: orange;
-		margin: 5px 5px 0px 0px;
+	.portfolio__item__content {
+		font-size: 18px;
+		font-weight: 300;
+		margin-top: 0px;
+		color: #232323;
+		letter-spacing: 2px;
 	}
 
 
@@ -199,7 +237,7 @@
 	.block-4__heading-1 {
 		margin-top: 40px;
 		font-weight: 200;
-		color: #B3B3B3;
+		color: #232323;
 		font-size: 36px;
 	}
 
@@ -235,6 +273,58 @@
 	    margin-right: 5px;
 	    display: block;
 	    margin-top: 10px;
+	}
+
+	.block-6 {
+		color: :fff;
+		height: 410px;
+	}
+
+	.block-6-background {
+		position: absolute;
+		width: 100%;
+		height: 420px;
+		left: 0px;
+		background: #1A1A1A;
+		z-index: -1;
+	}
+
+	.block-6__heading-1 {
+		padding-top: 40px;
+		font-size: 24px;
+		color: #b3b3b3;
+		margin-bottom: 0px;
+	}
+	.block-6__heading-2 {
+		font-size: 32px;
+		color: #b3b3b3;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+
+	.testimonial-text {
+		padding: 22px;
+		font-size: 18px;
+	}
+
+	.testimonial-user {
+		margin-top: 12px;
+		padding-left: 22px;
+		font-size: 24px;
+		color: #fff;
+	}
+
+	.testimonial-user > .username {
+		font-weight: 600;
+	}
+
+	.testimonial-user > .company {
+		font-weight: 200;
+	}
+
+
+	.flexslider {
+		color: #b3b3b3;
 	}
 
 	footer {
@@ -280,6 +370,7 @@
 	    margin-top: 10px;
 	}
 </style>
+
 <body>
 	<header>
 		<div class="logo"></div>
@@ -298,35 +389,116 @@
 	<div class="block-2">
 		<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">ABOUT US</h4>
 		<div class="block-2__services">
-			<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">Service 1</div>
-			<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">Service 2</div>
-			<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">Service 3</div>
+			<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">
+				<img class='services-image-1' id='services-image-1' src="img/card 1 bg-min.png">
+				<img class='services-image-2' id='services-image-2' src="img/card 1 fg-min.png">
+				<h3 class='block-2__services__heading'>Brand</h3>
+				<ul class='block-2__services__content'>
+					<li>Logo design</li>
+					<li>Identity system design</li>
+					<li>Brand naming</li>
+					<li>Guidelines and strategy</li>
+				</ul>
+			</div>
+			<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">
+				<img class='services-image-1' id='services-image-3' src="img/card 2 bg-min.png">
+				<img class='services-image-2' id='services-image-4' src="img/card 2 fg-min.png">
+				<h3 class='block-2__services__heading'>Brand</h3>
+				<ul class='block-2__services__content'>
+					<li>Logo design</li>
+					<li>Identity system design</li>
+					<li>Brand naming</li>
+					<li>Guidelines and strategy</li>
+				</ul>
+			</div>
+			<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">
+				<img class='services-image-1' id='services-image-5' src="img/card 3 bg-min.png">
+				<img class='services-image-2' id='services-image-6' src="img/card 3 fg-min.png">
+				<h3 class='block-2__services__heading'>Brand</h3>
+				<ul class='block-2__services__content'>
+					<li>Logo design</li>
+					<li>Identity system design</li>
+					<li>Brand naming</li>
+					<li>Guidelines and strategy</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
 	<div class="block-3">
+		<div class="block-3__background"></div>
 		<h3 class="block-3__heading-1" data-aos="fade-up" data-aos-duration="750">Projects</h3>
 		<h2 class="block-3__heading-2" data-aos="fade-up" data-aos-duration="750">Work from Past</h2>
 		<div class="portfolio">
-			<div class="portfolio-section-1">
-				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 1</div>
-				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 2</div>
-				<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 3</div>
+			<div class="portfolio__item">
+				<div class="portfolio__item-1">
+					<img src="img/works/p-01-min.jpg">
+					<h4 class="portfolio__item__heading">Polyrithm</h4>
+					<h6 class="portfolio__item__content">Identity & webpage design</h6>
+				</div>
 			</div>
-			<div class="portfolio-section-2">
-				<div class="portfolio-item-vertical" data-aos="fade-up" data-aos-duration="750">Work 4</div>
-				<div class="portfolio-section-inside-1">
-					<div class="portfolio-item-horizontal" data-aos="fade-up" data-aos-duration="750">Work 5</div>
-					<div class="portfolio-section-inside-2">
-						<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 6</div>
-						<div class="portfolio-item" data-aos="fade-up" data-aos-duration="750">Work 7</div>
+			<div class="portfolio__item">
+				<div class="portfolio__item-2">
+					<img src="img/works/Food Packaging & Branding MockUps-min.jpg">
+					<h4 class="portfolio__item__heading">B'Home</h4>
+					<h6 class="portfolio__item__content">Branding & print design</h6>
+				</div>
+			</div>
+			<div class="portfolio__item">
+				<div class="portfolio__item-3">
+					<img src="img/works/chill 1-min.jpg">
+					<h4 class="portfolio__item__heading">Hufbox</h4>
+					<h6 class="portfolio__item__content">Identity & webpage design</h6>
+				</div>
+			</div>
+			<div class="portfolio__item">
+				<div class="portfolio__item-4">
+					<img src="img/works/PE5WZW1-min.jpg">
+					<h4 class="portfolio__item__heading">Chiller</h4>
+					<h6 class="portfolio__item__content">Identity & webpage design</h6>
+				</div>
+			</div>
+		</div>
+		<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
+	</div>
+	<div class="block-4">
+	</div>
+
+	<div class="block-6">
+		<div class="block-6-background"></div>
+		<h3 class="block-6__heading-1" data-aos="fade-up" data-aos-duration="750">Testimonials</h3>
+		<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients feel</h2>
+		<div class="flexslider">
+			<div class="slides" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+				<div class="slide-1">
+					<div class="testimonial-text">
+						Wow they are really good
+					</div>
+					<div class="testimonial-user">
+						<span class="username">JOHN DOE</span>
+						<span class="company">COMPANY NAME</span>
+					</div>
+				</div>
+				<div class="slide-2">
+					<div class="testimonial-text">
+						Wow they are really good
+					</div>
+					<div class="testimonial-user">
+						<span class="username">JOHN DOE</span>
+						<span class="company">COMPANY NAME</span>
+					</div>
+				</div>
+				<div class="slide-3">
+					<div class="testimonial-text">
+						Wow they are really good
+					</div>
+					<div class="testimonial-user">
+						<span class="username">JOHN DOE</span>
+						<span class="company">COMPANY NAME</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="block-4">
-		<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
 	</div>
 	<div class="block-5">
 		<div class="logo-block-5"></div>
@@ -342,9 +514,30 @@
 			<li class="menu-footer-item instagram">INSTAGRAM</li>
 		</ul>
 	</footer>
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script>
     AOS.init();
+    $('.slides').slick();
+    $('.block-2__services__service-1').hover(function() {
+    	$('#services-image-1').css('filter', 'grayscale(0%)');
+    }, function() {
+    	$('#services-image-1').css('filter', 'grayscale(100%)');
+    });
+    $('.block-2__services__service-2').hover(function() {
+    	$('#services-image-3').css('filter', 'grayscale(0%)');
+    }, function() {
+    	$('#services-image-3').css('filter', 'grayscale(100%)');
+    });
+    $('.block-2__services__service-3').hover(function() {
+    	$('#services-image-5').css('filter', 'grayscale(0%)');
+    }, function() {
+    	$('#services-image-5').css('filter', 'grayscale(100%)');
+    });
   </script>
 </body>
 </html>
