@@ -24,10 +24,16 @@
 		padding: 20px;
 	}
 
+	@media (min-width: 1025px) {
+		body {
+			width: 100%;
+		}
+	}
+
 	@media (min-width: 1281px) {
 		body {
 			margin: 20px auto 0px auto;
-			width: 80%;
+			width: 1500px;
 		}
 	}
 
@@ -64,11 +70,12 @@
 	}
 
 	.block-1__heading-1 {
-		font-weight: 200;
-		color: #999999;
-		font-size: 36px;
+		font-weight: 500;
+		color: #C91F37;
+		font-size: 34px;
+		letter-spacing: 3px;
 	}
-
+/* 
 	.block-1__heading-1::before {
 		width: 40px;
 	    border-top: 2px solid #FF0000;
@@ -76,7 +83,7 @@
 	    content: "   ";
 	    margin-right: 5px;
 	    display: inline-block;
-	}
+	} */
 
 	.block-1__heading-2 {
 		margin-top: 24px;
@@ -84,7 +91,32 @@
 		font-family: 'Playfair Display', serif;
 		font-weight: 700;
 		font-size: 70px;
+		width: 700px;
 	}
+
+	.block-1__link-1 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		color: #fff;
+		position: relative;
+		letter-spacing: 3px;
+		width: auto;
+		cursor: pointer;
+	}
+
+	.block-1__link-1::after {
+		border-top: 2px solid #C91F37;
+		height: 5px;
+		content: "   ";
+		margin-right: 5px;
+		position: absolute;
+    top: 31px;
+    left: 0px;
+    width: 100px;
+	}
+
+
 
 	.block-1__content-1 {
 		font-weight: 300;
@@ -96,7 +128,7 @@
 		margin-top: 50px;
 		font-weight: 500;
 		color: #ffffff;
-		font-size: 21px;
+		font-size: 36px;
 		text-align: center;
 	}
 
@@ -197,16 +229,24 @@
 	}
 
 	.block-3__heading-1 {
+		font-family: 'Poppins', sans-serif;
 		margin-top: 40px;
+		margin-bottom: 0px;
 		padding-top: 40px;
-		font-weight: 200;
+		font-weight: 500;
+		letter-spacing: 1.5px;
 		color: #232323;
-		font-size: 36px;
+		font-size: 24px;
+		position: relative;
+		margin-left: 44px;
 	}
 
 	.block-3__heading-1::before {
-		width: 40px;
-	    border-top: 2px solid #FF0000;
+			position: absolute;
+			bottom: 15px;
+			left: -45px;
+			width: 40px;
+	    border-top: 2px solid #C91F37;
 	    height: 5px;
 	    content: "   ";
 	    margin-right: 5px;
@@ -214,7 +254,7 @@
 	}
 
 	.block-3__heading-2 {
-		margin-top: 30px;
+		margin-top: 0px;
 		font-family: 'Playfair Display', serif;
 		font-weight: 700;
 		color: #232323;
@@ -351,11 +391,25 @@
 		margin-bottom: 0px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 24px;
+		position: relative;
+		margin-left: 50px;
+	}
+
+	.block-6__heading-1::before {
+			position: absolute;
+			bottom: 10px;
+			left: -45px;
+			width: 40px;
+	    border-top: 2px solid #C91F37;
+	    height: 5px;
+	    content: "   ";
+	    margin-right: 5px;
+	    display: inline-block;
 	}
 	
 	.block-6__heading-2 {
-		font-size: 32px;
+		font-size: 52px;
 		color: #fff;
 		padding-top: 0px;
 		margin-top: 0px;
@@ -364,7 +418,10 @@
 
 	.testimonial-text {
 		padding: 22px;
-		font-size: 18px;
+		font-size: 24px;
+		color: #C1C1C1;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
 	}
 
 	.testimonial-user {
@@ -372,6 +429,8 @@
 		padding-left: 22px;
 		font-size: 24px;
 		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: 0.5px;
 	}
 
 	.testimonial-user > .username {
@@ -465,9 +524,10 @@
 		</il>
 	</header>
 	<div class="block-1">
-		<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Design Studio</h3>
-		<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">Design Inspire Change</h1>
-		<p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p>
+		<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Business Design Studio</h3>
+		<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">We facilitate growth for innovative ideas.</h1>
+		<!-- <p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p> -->
+			<p class="block-1__link-1" data-aos="fade-up" data-aos-duration="750">LEARN MORE</p>
 	</div>
 	<div class="block-2">
 		<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">Our Services</h4>
@@ -561,7 +621,7 @@
 	<div class="block-6">
 		<div class="block-6-background"></div>
 		<h3 class="block-6__heading-1" data-aos="fade-up" data-aos-duration="750">Testimonials</h3>
-		<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients feel</h2>
+		<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients say</h2>
 		<div class="flexslider">
 			<div class="flexslider-left-arrow"><i class="material-icons">
 					arrow_back_ios
