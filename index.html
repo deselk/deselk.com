@@ -160,6 +160,7 @@
 	}
 
 	.rotate {
+		
 				/* Safari */
 		-webkit-transform: rotate(-90deg);
 
@@ -171,7 +172,7 @@
 
 		/* Opera */
 		-o-transform: rotate(-90deg);
-
+		transform: rotate(-90deg);
 		/* Internet Explorer */
 		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 	}
@@ -302,6 +303,7 @@
 		margin-bottom: 2px;
 		position: absolute;
     rotate: -90deg;
+		transform: rotate(-90deg);
     left: -75px;
     bottom: 50%;
 	}
@@ -343,8 +345,8 @@
 	.block-5__section__heading-1 {
 		margin-top: 140px;
 		font-weight: 300;
-		color: #b3b3b3;
-		font-size: 24px;
+		color: #fff;
+		font-size: 48px;
 	}
 
 	.block-5__section__sub-heading-1 {
@@ -358,6 +360,8 @@
 		font-weight: 200;
 		color: #ffffff;
 		font-size: 36px;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 200;
 	}
 
 	.block-5__section__heading-2::after {
@@ -473,24 +477,43 @@
 		display: flex;
 		margin-top: 152px;
 	}
+
+	div.footer-bar {
+		position: absolute;
+		width: 100%;
+		border-top: 1px solid grey;
+		left: 0px;
+		opacity: 0.7;
+	}
 	div.footer-logo {
-		width: 20%;
+		width: 15%;
 		height: 18px;
 		margin-top: 16px;
 		margin-bottom: 16px;
+	}
+	div.footer-address {
+		margin-top: 10px;
+		width: 35%;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
 	}
 	ul.menu-footer {
 		list-style-type: none;
 		display: flex;
 		/*position: relative;*/
 		/*left: 70%;*/
-		width: 80%;
+		width: 50%;
 		justify-content: flex-end;
 		color: #cccccc;
 	}
 	li.menu-footer-item {
 		padding: 0px 40px 0px 40px; 
-		font-size: 14px;
+		font-size: 24px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
 	}
 
 	.facebook::after {
@@ -533,8 +556,8 @@
 		<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">Our Services</h4>
 		<div class="block-2__services">
 			<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-1' src="img/card 1 bg-min.png">
-				<img class='services-image-2' id='services-image-2' src="img/card 1 fg-min.png">
+				<img class='services-image-1' id='services-image-1' src="img/background/card.1.min.png">
+				<img class='services-image-2' id='services-image-2' src="img/foreground/card.1.min.png">
 				<div class="block-2__services_description">
 					<h3 class='block-2__services__heading rotate'>Brand</h3>
 					<ul class='block-2__services__content'>
@@ -546,8 +569,8 @@
 				</div>
 			</div>
 			<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-3' src="img/card 2 bg-min.png">
-				<img class='services-image-2' id='services-image-4' src="img/card 2 fg-min.png">
+				<img class='services-image-1' id='services-image-3' src="img/background/card.2.min.png">
+				<img class='services-image-2' id='services-image-4' src="img/foreground/card.2.min.png">
 				<div class="block-2__services_description">
 					<h3 class='block-2__services__heading rotate'>Print</h3>
 					<ul class='block-2__services__content'>
@@ -559,8 +582,8 @@
 				</div>
 			</div>
 			<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-5' src="img/card 3 bg-min.png">
-				<img class='services-image-2' id='services-image-6' src="img/card 3 fg-min.png">
+				<img class='services-image-1' id='services-image-5' src="img/background/card.3.min.png">
+				<img class='services-image-2' id='services-image-6' src="img/foreground/card.3.min.png">
 				<div class="block-2__services_description">
 					<h3 class='block-2__services__heading rotate'>Digital</h3>
 					<ul class='block-2__services__content'>
@@ -669,7 +692,9 @@
 		</div>
 	</div>
 	<footer>
-		<div class="footer-logo" data-aos="fade-up" data-aos-duration="750">Deselk Studio Logo</div>
+		<div class="footer-bar"></div>
+		<div class="footer-logo">Deselk Studio Logo</div>
+		<div class="footer-address">B1 Shahpura, BHOPAL, M.P,<br/> +91-9045109642 </div>
 		<ul class="menu-footer">
 			<li class="menu-footer-item facebook">FACEBOOK</li>
 			<li class="menu-footer-item instagram">INSTAGRAM</li>
