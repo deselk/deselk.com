@@ -17,24 +17,14 @@
 
 <style>
 
+	* {
+		box-sizing: border-box;
+	}
+
 	body {
 		font-family: 'Work Sans', sans-serif;
 		font-weight: 300;
 		background-color: black;
-		padding: 20px;
-	}
-
-	@media (min-width: 1025px) {
-		body {
-			width: 100%;
-		}
-	}
-
-	@media (min-width: 1281px) {
-		body {
-			margin: 20px auto 0px auto;
-			width: 1500px;
-		}
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -67,6 +57,7 @@
 	.block-1 {
 		clear: both;
 		margin-top: 100px;
+		height: 100vh;
 	}
 
 	.block-1__heading-1 {
@@ -315,6 +306,7 @@
 		position: relative;
 		text-align: right;
 		font-family: 'Poppins', sans-serif;
+		width: 90%;
 	}
 
 	.block-4__heading-1::after {
@@ -436,6 +428,7 @@
 	.flexslider {
   	color: #4D4D4D;
 		position: relative;
+		width: 1500px;
 	}
 
 	.flexslider-left-arrow {
@@ -451,7 +444,7 @@
 
 	.flexslider-right-arrow {
 		position: absolute;
-    right: -167px;
+    right: -160px;
 		cursor: pointer
 	}
 
@@ -521,172 +514,206 @@
 	    display: block;
 	    margin-top: 10px;
 	}
+
+	.site-container {
+		width: 100%;
+	}
+
+	@media (min-width: 1024px) {
+		.site-container {
+			width: 900px;
+			margin: 20px auto 0px auto;
+		}
+		.flexslider {
+			width: 900px;
+		}
+	}
+
+	@media (min-width: 1281px) {
+		.site-container {
+			margin: 20px auto 0px auto;
+			width: 1024px;
+		}
+		.flexslider {
+			width: 1024px;
+		}
+	}
+
+	@media (min-width: 1600px) {
+		.site-container {
+			margin: 20px auto 0px auto;
+			width: 1500px;
+		}
+		.flexslider {
+			width: 1500px;
+		}
+	}
 </style>
 
 <body>
-	<header>
-		<div class="logo"></div>
-		<ul class="menu">
-			<li class="menu-item" data-aos="fade-up" data-aos-duration="300">Home</li>
-			<li class="menu-item" data-aos="fade-up" data-aos-duration="400">About Us</li>
-			<li class="menu-item" data-aos="fade-up" data-aos-duration="500">Portfolio</li>
-			<li class="menu-item" data-aos="fade-up" data-aos-duration="600">Contact</li>
-		</il>
-	</header>
-	<div class="block-1">
-		<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Business Design Studio</h3>
-		<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">We facilitate growth for innovative ideas.</h1>
-		<!-- <p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p> -->
-			<p class="block-1__link-1" data-aos="fade-up" data-aos-duration="750">LEARN MORE</p>
-	</div>
-	<div class="block-2">
-		<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">Our Services</h4>
-		<div class="block-2__services">
-			<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-1' src="img/background/card.1.min.png">
-				<img class='services-image-2' id='services-image-2' src="img/foreground/card.1.min.png">
-				<div class="block-2__services_description">
-					<h3 class='block-2__services__heading rotate'>Brand</h3>
-					<ul class='block-2__services__content'>
-						<li>Logo design</li>
-						<li>Identity system design</li>
-						<li>Brand naming</li>
-						<li>Guidelines and strategy</li>
-					</ul>
-				</div>
-			</div>
-			<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-3' src="img/background/card.2.min.png">
-				<img class='services-image-2' id='services-image-4' src="img/foreground/card.2.min.png">
-				<div class="block-2__services_description">
-					<h3 class='block-2__services__heading rotate'>Print</h3>
-					<ul class='block-2__services__content'>
-						<li>Logo design</li>
-						<li>Identity system design</li>
-						<li>Brand naming</li>
-						<li>Guidelines and strategy</li>
-					</ul>
-				</div>
-			</div>
-			<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">
-				<img class='services-image-1' id='services-image-5' src="img/background/card.3.min.png">
-				<img class='services-image-2' id='services-image-6' src="img/foreground/card.3.min.png">
-				<div class="block-2__services_description">
-					<h3 class='block-2__services__heading rotate'>Digital</h3>
-					<ul class='block-2__services__content'>
-						<li>Logo design</li>
-						<li>Identity system design</li>
-						<li>Brand naming</li>
-						<li>Guidelines and strategy</li>
-					</ul>
-				</div>
-				</div>
-			</div>
+	<div class="site-container">
+		<header>
+			<div class="logo"></div>
+			<ul class="menu">
+				<li class="menu-item" data-aos="fade-up" data-aos-duration="300">Home</li>
+				<li class="menu-item" data-aos="fade-up" data-aos-duration="400">About Us</li>
+				<li class="menu-item" data-aos="fade-up" data-aos-duration="500">Portfolio</li>
+				<li class="menu-item" data-aos="fade-up" data-aos-duration="600">Contact</li>
+			</il>
+		</header>
+		<div class="block-1">
+			<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Business Design Studio</h3>
+			<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">We facilitate growth for innovative ideas.</h1>
+			<!-- <p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p> -->
+				<p class="block-1__link-1" data-aos="fade-up" data-aos-duration="750">LEARN MORE</p>
 		</div>
-	</div>
+		<div class="block-2">
+			<h4 class="block-2__heading-1" data-aos="fade-up" data-aos-duration="750">Our Services</h4>
+			<div class="block-2__services">
+				<div class="block-2__services__service-1" data-aos="fade-up" data-aos-duration="750">
+					<img class='services-image-1' id='services-image-1' src="img/background/card.1.min.png">
+					<img class='services-image-2' id='services-image-2' src="img/foreground/card.1.min.png">
+					<div class="block-2__services_description">
+						<h3 class='block-2__services__heading rotate'>Brand</h3>
+						<ul class='block-2__services__content'>
+							<li>Logo design</li>
+							<li>Identity system design</li>
+							<li>Brand naming</li>
+							<li>Guidelines and strategy</li>
+						</ul>
+					</div>
+				</div>
+				<div class="block-2__services__service-2" data-aos="fade-up" data-aos-duration="750">
+					<img class='services-image-1' id='services-image-3' src="img/background/card.2.min.png">
+					<img class='services-image-2' id='services-image-4' src="img/foreground/card.2.min.png">
+					<div class="block-2__services_description">
+						<h3 class='block-2__services__heading rotate'>Print</h3>
+						<ul class='block-2__services__content'>
+							<li>Logo design</li>
+							<li>Identity system design</li>
+							<li>Brand naming</li>
+							<li>Guidelines and strategy</li>
+						</ul>
+					</div>
+				</div>
+				<div class="block-2__services__service-3" data-aos="fade-up" data-aos-duration="750">
+					<img class='services-image-1' id='services-image-5' src="img/background/card.3.min.png">
+					<img class='services-image-2' id='services-image-6' src="img/foreground/card.3.min.png">
+					<div class="block-2__services_description">
+						<h3 class='block-2__services__heading rotate'>Digital</h3>
+						<ul class='block-2__services__content'>
+							<li>Logo design</li>
+							<li>Identity system design</li>
+							<li>Brand naming</li>
+							<li>Guidelines and strategy</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
 
-	<div class="block-3">
-		<div class="block-3__background"></div>
-		<h3 class="block-3__heading-1" data-aos="fade-up" data-aos-duration="750">Projects</h3>
-		<h2 class="block-3__heading-2" data-aos="fade-up" data-aos-duration="750">Work from Past</h2>
-		<div class="portfolio">
-			<div class="portfolio__item">
-				<div class="portfolio__item-1">
-					<!-- <img src="img/works/p-01-min.jpg"> -->
-					<img src="https://place-hold.it/400x500">
-					<h4 class="portfolio__item__heading">Polyrithm</h4>
-					<h6 class="portfolio__item__content">Identity & webpage design</h6>
-				</div>
-			</div>
-			<div class="portfolio__item">
-				<div class="portfolio__item-2">
+		<div class="block-3">
+			<div class="block-3__background"></div>
+			<h3 class="block-3__heading-1" data-aos="fade-up" data-aos-duration="750">Projects</h3>
+			<h2 class="block-3__heading-2" data-aos="fade-up" data-aos-duration="750">Work from Past</h2>
+			<div class="portfolio">
+				<div class="portfolio__item">
+					<div class="portfolio__item-1">
+						<!-- <img src="img/works/p-01-min.jpg"> -->
 						<img src="https://place-hold.it/400x500">
-					<!-- <img src="img/works/Food Packaging & Branding MockUps-min.jpg"> -->
-					<h4 class="portfolio__item__heading">B'Home</h4>
-					<h6 class="portfolio__item__content">Branding & print design</h6>
+						<h4 class="portfolio__item__heading">Polyrithm</h4>
+						<h6 class="portfolio__item__content">Identity & webpage design</h6>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__item-2">
+							<img src="https://place-hold.it/400x500">
+						<!-- <img src="img/works/Food Packaging & Branding MockUps-min.jpg"> -->
+						<h4 class="portfolio__item__heading">B'Home</h4>
+						<h6 class="portfolio__item__content">Branding & print design</h6>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__item-3">
+							<img src="https://place-hold.it/400x500">
+						<!-- <img src="img/works/chill 1-min.jpg"> -->
+						<h4 class="portfolio__item__heading">Hufbox</h4>
+						<h6 class="portfolio__item__content">Identity & webpage design</h6>
+					</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="portfolio__item-4">
+							<img src="https://place-hold.it/400x500">
+						<!-- <img src="img/works/PE5WZW1-min.jpg"> -->
+						<h4 class="portfolio__item__heading">Chiller</h4>
+						<h6 class="portfolio__item__content">Identity & webpage design</h6>
+					</div>
 				</div>
 			</div>
-			<div class="portfolio__item">
-				<div class="portfolio__item-3">
-						<img src="https://place-hold.it/400x500">
-					<!-- <img src="img/works/chill 1-min.jpg"> -->
-					<h4 class="portfolio__item__heading">Hufbox</h4>
-					<h6 class="portfolio__item__content">Identity & webpage design</h6>
-				</div>
-			</div>
-			<div class="portfolio__item">
-				<div class="portfolio__item-4">
-						<img src="https://place-hold.it/400x500">
-					<!-- <img src="img/works/PE5WZW1-min.jpg"> -->
-					<h4 class="portfolio__item__heading">Chiller</h4>
-					<h6 class="portfolio__item__content">Identity & webpage design</h6>
-				</div>
-			</div>
+			<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
 		</div>
-		<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
-	</div>
-	<div class="block-4">
-	</div>
+		<div class="block-4">
+		</div>
 
-	<div class="block-6">
-		<div class="block-6-background"></div>
-		<h3 class="block-6__heading-1" data-aos="fade-up" data-aos-duration="750">Testimonials</h3>
-		<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients say</h2>
-		<div class="flexslider">
-			<div class="flexslider-left-arrow"><i class="material-icons">
-					arrow_back_ios
-					</i></div>
-			<div class="flexslider-right-arrow"><i class="material-icons">
-					arrow_forward_ios
-					</i></div>
-			<div class="slides" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-				<div class="slide-1">
-					<div class="testimonial-text">
-						Wow they are really good
+		<div class="block-6">
+			<div class="block-6-background"></div>
+			<h3 class="block-6__heading-1" data-aos="fade-up" data-aos-duration="750">Testimonials</h3>
+			<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients say</h2>
+			<div class="flexslider">
+				<div class="flexslider-left-arrow"><i class="material-icons">
+						arrow_back_ios
+						</i></div>
+				<div class="flexslider-right-arrow"><i class="material-icons">
+						arrow_forward_ios
+						</i></div>
+				<div class="slides" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+					<div class="slide-1">
+						<div class="testimonial-text">
+							Wow they are really good
+						</div>
+						<div class="testimonial-user">
+							<span class="username">JOHN DOE</span>
+							<span class="company">COMPANY NAME</span>
+						</div>
 					</div>
-					<div class="testimonial-user">
-						<span class="username">JOHN DOE</span>
-						<span class="company">COMPANY NAME</span>
+					<div class="slide-2">
+						<div class="testimonial-text">
+							Wow they are really good
+						</div>
+						<div class="testimonial-user">
+							<span class="username">JOHN DOE</span>
+							<span class="company">COMPANY NAME</span>
+						</div>
 					</div>
-				</div>
-				<div class="slide-2">
-					<div class="testimonial-text">
-						Wow they are really good
-					</div>
-					<div class="testimonial-user">
-						<span class="username">JOHN DOE</span>
-						<span class="company">COMPANY NAME</span>
-					</div>
-				</div>
-				<div class="slide-3">
-					<div class="testimonial-text">
-						Wow they are really good
-					</div>
-					<div class="testimonial-user">
-						<span class="username">JOHN DOE</span>
-						<span class="company">COMPANY NAME</span>
+					<div class="slide-3">
+						<div class="testimonial-text">
+							Wow they are really good
+						</div>
+						<div class="testimonial-user">
+							<span class="username">JOHN DOE</span>
+							<span class="company">COMPANY NAME</span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="block-5">
-		<div class="logo-block-5"></div>
-		<div class="block-5__section">
-			<div class="block-5__section__heading-1" data-aos="fade-up" data-aos-duration="750">Lets build something together</div>
-			<div class="block-5__section__sub-heading-1" data-aos="fade-up" data-aos-duration="750">Looking to start a project or just more information?</div>
-			<h3 class="block-5__section__heading-2" data-aos="fade-up" data-aos-duration="750">Contact Us</h3>
+		<div class="block-5">
+			<div class="logo-block-5"></div>
+			<div class="block-5__section">
+				<div class="block-5__section__heading-1" data-aos="fade-up" data-aos-duration="750">Lets build something together</div>
+				<div class="block-5__section__sub-heading-1" data-aos="fade-up" data-aos-duration="750">Looking to start a project or just more information?</div>
+				<h3 class="block-5__section__heading-2" data-aos="fade-up" data-aos-duration="750">Contact Us</h3>
+			</div>
 		</div>
-	</div>
-	<footer>
-		<div class="footer-bar"></div>
-		<div class="footer-logo">Deselk Studio Logo</div>
-		<div class="footer-address">B1 Shahpura, BHOPAL, M.P,<br/> +91-9045109642 </div>
-		<ul class="menu-footer">
-			<li class="menu-footer-item facebook">FACEBOOK</li>
-			<li class="menu-footer-item instagram">INSTAGRAM</li>
-		</ul>
-	</footer>
+		<footer>
+			<div class="footer-bar"></div>
+			<div class="footer-logo">Deselk Studio Logo</div>
+			<div class="footer-address">B1 Shahpura, BHOPAL, M.P,<br/> +91-9045109642 </div>
+			<ul class="menu-footer">
+				<li class="menu-footer-item facebook">FACEBOOK</li>
+				<li class="menu-footer-item instagram">INSTAGRAM</li>
+			</ul>
+		</footer>
 <script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -714,6 +741,7 @@
     }, function() {
     	$('#services-image-5').css('filter', 'grayscale(100%)');
     });
-  </script>
+	</script>
+	</div>
 </body>
 </html>
