@@ -22,7 +22,7 @@
 	}
 
 	body {
-		font-family: 'Work Sans', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-weight: 300;
 		background-color: black;
 	}
@@ -35,11 +35,11 @@
 		font-weight: 300;
 		color: #B3B3B3;
 	}
-	div.logo {
-		width: 20%;
-		height: 18px;
+	.logo {
+		height: 26px;
 		margin-top: 16px;
 		margin-bottom: 16px;
+
 	}
 	ul.menu {
 		list-style-type: none;
@@ -56,8 +56,24 @@
 	}
 	.block-1 {
 		clear: both;
-		margin-top: 100px;
+		margin-top: 25vh;
 		height: 100vh;
+	}
+
+	.block-1-background {
+    position: absolute;
+    right: 0px;
+    height: 51vh;
+    width: 28vw;
+    top: 21vh;
+	}
+
+	.block-1-background-circle {
+		position: absolute;
+		width: 43vw;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
 	}
 
 	.block-1__heading-1 {
@@ -65,6 +81,10 @@
 		color: #C91F37;
 		font-size: 34px;
 		letter-spacing: 3px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4px;
 	}
 /* 
 	.block-1__heading-1::before {
@@ -81,19 +101,22 @@
 		color: #ffffff;
 		font-family: 'Playfair Display', serif;
 		font-weight: 700;
-		font-size: 70px;
-		width: 700px;
+		font-size: 80px;
+    width: 749px;
 	}
 
 	.block-1__link-1 {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 700;
-		font-size: 18px;
 		color: #fff;
 		position: relative;
 		letter-spacing: 3px;
 		width: auto;
 		cursor: pointer;
+		font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 150px;
 	}
 
 	.block-1__link-1::after {
@@ -102,7 +125,7 @@
 		content: "   ";
 		margin-right: 5px;
 		position: absolute;
-    top: 31px;
+    top: 40px;
     left: 0px;
     width: 100px;
 	}
@@ -115,12 +138,17 @@
 		font-size: 24px;
 	}
 
+	.block-2 {
+    height: 72vh;
+	}
+
 	.block-2__heading-1 {
 		margin-top: 50px;
 		font-weight: 500;
 		color: #ffffff;
 		font-size: 36px;
 		text-align: center;
+		font-family: 'Playfair Display';
 	}
 
 	/* .block-2__heading-1::after {
@@ -138,6 +166,9 @@
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-around;
+		width: 57vw;
+    margin-left: auto;
+    margin-right: auto;
 	}
 	.block-2__services__heading {
 		position: absolute;
@@ -145,9 +176,11 @@
     height: 30px;
     margin-block-start: 1em;
     width: 100px;
-    left: -7px;
-    top: 35px;
-    font-weight: 500;
+    left: -25px;
+    top: 19px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
 	}
 
 	.rotate {
@@ -158,9 +191,15 @@
 
 	.block-2__services__content {
 		position: absolute;
-		left: 80px;
-		padding-left: 0px;
-		list-style-type: none;
+
+    left: 74px;
+    padding-left: 0px;
+    list-style-type: none;
+    color: #232323b0;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
 	}
 
 	.block-2__services_description {
@@ -199,10 +238,17 @@
 		margin-top: 140px;
 	}
 
+	.block-3-circle {
+		position: absolute;
+    margin-left: 130px;
+    z-index: 0;
+		width: 670px;
+	}
+
 	.block-3__background {
 		position: absolute;
 		width: 100%;
-		height: 1750px;
+		height: 1955px;
 		left: 0px;
 		background: white;
 		z-index: -1;
@@ -212,25 +258,25 @@
 		font-family: 'Poppins', sans-serif;
 		margin-top: 40px;
 		margin-bottom: 0px;
-		padding-top: 40px;
 		font-weight: 500;
-		letter-spacing: 1.5px;
-		color: #232323;
+		letter-spacing: 2.5px;
+		color: #232323b0;
 		font-size: 24px;
 		position: relative;
-		margin-left: 44px;
+		margin-left: 96px;
+    padding-top: 120px;
 	}
 
 	.block-3__heading-1::before {
-			position: absolute;
-			bottom: 15px;
-			left: -45px;
-			width: 40px;
-	    border-top: 2px solid #C91F37;
-	    height: 5px;
-	    content: "   ";
-	    margin-right: 5px;
-	    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: -96px;
+    width: 78px;
+    border-top: 2px solid #C91F37;
+    height: 5px;
+    content: " ";
+    margin-right: 5px;
+    display: inline-block;
 	}
 
 	.block-3__heading-2 {
@@ -255,28 +301,39 @@
 	}
 
 	.portfolio__item > div > img {
-		height: 500px;
+    width: 500px;
+    height: 500px;
+		margin-left: 20px;
 	}
 
 	.portfolio__item-1 {
 		position: relative;
+		top: 30px;
 	}
 	.portfolio__item-3 {
 		position: relative;
+		top: 30px;
 	}
 
 	.portfolio__item-2 {
 		position: relative;
-		top: 30px;
+		top: -100px;
 	}
 
 	.portfolio__item-4 {
 		position: relative;
-		top: 30px;
+		top: -100px;
+	}
+
+	.portfolio-top {
+		margin: auto;
+	}
+
+	.portfolio-bottom {
+		margin: auto;
 	}
 
 	.portfolio__item__heading {
-		color: #000;
 		font-size: 24px;
 		font-weight: 500;
 		margin-bottom: 2px;
@@ -284,7 +341,17 @@
 		transform: rotate(-90deg);
     left: -75px;
     bottom: 50%;
+		font-family: 'Playfair Display';
+    font-weight: 700;
+    letter-spacing: 1px;
+		color: #808080;
 	}
+
+	/* .portfolio__item__heading::before {
+		width: 10px;
+		height: 2px;
+		background-color: #1a1a1a;
+	} */
 
 	.portfolio__item__content {
 		font-size: 18px;
@@ -292,6 +359,10 @@
 		margin-top: 0px;
 		color: #232323;
 		letter-spacing: 2px;
+    font-family: 'Poppins';
+    font-size: 22px;
+    margin-top: 18px;
+    margin-left: 19px;
 	}
 
 
@@ -308,11 +379,12 @@
 		font-family: 'Poppins', sans-serif;
 		width: 90%;
 		cursor: pointer;
+		margin-bottom: 120px;
 	}
 
 	.block-4__heading-1::after {
 			width: 140px;
-	    border-top: 2px solid #FF0000;
+	    border-top: 2px solid #C91F37;
 	    height: 5px;
 	    content: " ";
 	    margin-right: 5px;
@@ -322,27 +394,52 @@
 			right: 0px;
 	}
 
+	.block-4-circle-2 {
+    position: absolute;
+    height: 900px;
+    right: 0px;
+    top: 800px;
+	}
+
+	.block-5 {
+		display: flex;
+	}
+
+	.logo-block-5 {
+		width: 178px;
+    position: relative;
+    top: 22px;
+	}
+
+	.block-5__section {
+		margin-left: 80px;
+	}
+
 	.block-5__section__heading-1 {
 		margin-top: 140px;
 		font-weight: 300;
 		color: #fff;
 		font-size: 48px;
+		font-family: 'Poppins';
 	}
 
 	.block-5__section__sub-heading-1 {
 		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
-		color: #808080;
+    font-weight: 300;
+    color: #808080;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 10px;
 	}
 
 	.block-5__section__heading-2 {
-		margin-top: 40px;
-		font-weight: 200;
+		margin-top: 75px;
+		font-weight: 400;
 		color: #ffffff;
-		font-size: 36px;
-		font-family: 'Work Sans', sans-serif;
-		font-weight: 200;
+		font-size: 30px;
+		font-family: 'Poppins', sans-serif;
 		cursor: pointer;
+		letter-spacing: 2.5px;
 	}
 
 	.block-5__section__heading-2::after {
@@ -357,19 +454,26 @@
 
 	.block-6 {
 		color: :fff;
-		height: 410px;
+		height: 600px;
+	}
+
+	.block-6-circle {
+		position: absolute;;
+		height: 600px;
+    left: 0px;
 	}
 
 	.block-6-background {
 		position: absolute;
 		width: 100%;
-		height: 420px;
+		height: 600px;
 		left: 0px;
 		background: #1A1A1A;
 		z-index: -1;
 	}
 
 	.block-6__heading-1 {
+
 		padding-top: 40px;
 		font-size: 24px;
 		color: #b3b3b3;
@@ -379,18 +483,20 @@
     font-size: 24px;
 		position: relative;
 		margin-left: 50px;
+		margin-left: 96px;
+		padding-top: 120px;
 	}
 
 	.block-6__heading-1::before {
-			position: absolute;
-			bottom: 10px;
-			left: -45px;
-			width: 40px;
-	    border-top: 2px solid #C91F37;
-	    height: 5px;
-	    content: "   ";
-	    margin-right: 5px;
-	    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: -96px;
+    width: 78px;
+    border-top: 2px solid #C91F37;
+    height: 5px;
+    content: " ";
+    margin-right: 5px;
+    display: inline-block;
 	}
 	
 	.block-6__heading-2 {
@@ -402,11 +508,14 @@
 	}
 
 	.testimonial-text {
-		padding: 22px;
-		font-size: 24px;
-		color: #C1C1C1;
-		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
+    padding: 22px;
+    font-size: 18px;
+    color: #C1C1C1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    line-height: 34px;
+
 	}
 
 	.testimonial-user {
@@ -457,7 +566,7 @@
 
 	footer {
 		display: flex;
-		margin-top: 152px;
+		margin-top: 120px;
 	}
 
 	div.footer-bar {
@@ -473,14 +582,23 @@
 		margin-top: 16px;
 		margin-bottom: 16px;
 	}
+
+	.footer-logo {
+    height: 50px;
+    top: 13px;
+    position: relative;
+    width: 178px;
+	}
+
 	div.footer-address {
 		margin-top: 10px;
-		width: 35%;
+    text-align: left;
+    margin-left: 80px;
 		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
-		font-size: 24px;
-		color: #fff;
-		text-align: center;
+		font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
 	}
 	ul.menu-footer {
 		list-style-type: none;
@@ -493,9 +611,10 @@
 	}
 	li.menu-footer-item {
 		padding: 0px 40px 0px 40px; 
-		font-size: 24px;
-		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
 	}
 
 	.facebook::after {
@@ -572,9 +691,10 @@
 </style>
 
 <body>
-	<div class="site-container">
+	<img src="img/bgcircles/top.svg" class="block-1-background-circle">
+	<div class="site-container">	
 		<header>
-			<div class="logo"></div>
+			<img class="logo" src="img/logos/deselk name white.svg">
 			<ul class="menu">
 				<li class="menu-item" data-aos="fade-up" data-aos-duration="300">Home</li>
 				<li class="menu-item" data-aos="fade-up" data-aos-duration="400">About Us</li>
@@ -583,6 +703,7 @@
 			</il>
 		</header>
 		<div class="block-1">
+			<img src="img/logobg.svg" class="block-1-background">
 			<h3 class="block-1__heading-1" data-aos="fade-up" data-aos-duration="750">Business Design Studio</h3>
 			<h1 class="block-1__heading-2" data-aos="fade-up" data-aos-duration="750">We facilitate growth for innovative ideas.</h1>
 			<!-- <p class="block-1__content-1" data-aos="fade-up" data-aos-duration="750">We love designing the right communication that delivers the right feelings and emotions to the targeted audience</p> -->
@@ -634,10 +755,14 @@
 			</div>
 
 		<div class="block-3">
-			<div class="block-3__background"></div>
+			<img src="img/bgcircles/2.svg" class="block-3-circle">
+			<div class="block-3__background">
+					<img class="block-4-circle-2" src="img/bgcircles/3.svg">	
+			</div>
 			<h3 class="block-3__heading-1" data-aos="fade-up" data-aos-duration="750">Projects</h3>
 			<h2 class="block-3__heading-2" data-aos="fade-up" data-aos-duration="750">Work from Past</h2>
 			<div class="portfolio">
+				<div class="portfolio-top">
 				<div class="portfolio__item">
 					<div class="portfolio__item-1">
 						<!-- <img src="img/works/p-01-min.jpg"> -->
@@ -654,6 +779,8 @@
 						<h6 class="portfolio__item__content">Branding & print design</h6>
 					</div>
 				</div>
+			</div>
+			<div class="portfolio-bottom">
 				<div class="portfolio__item">
 					<div class="portfolio__item-3">
 							<img src="https://place-hold.it/400x500">
@@ -670,13 +797,19 @@
 						<h6 class="portfolio__item__content">Identity & webpage design</h6>
 					</div>
 				</div>
+				</div>
 			</div>
-			<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">All Projects</h3>
+			
+			<h3 class="block-4__heading-1" data-aos="fade-up" data-aos-duration="750">
+				All Projects
+			
+			</h3>
 		</div>
 		<div class="block-4">
 		</div>
 
 		<div class="block-6">
+				<img class="block-6-circle" src="img/bgcircles/4.svg">
 			<div class="block-6-background"></div>
 			<h3 class="block-6__heading-1" data-aos="fade-up" data-aos-duration="750">Testimonials</h3>
 			<h2 class="block-6__heading-2" data-aos="fade-up" data-aos-duration="750">What our clients say</h2>
@@ -690,7 +823,8 @@
 				<div class="slides" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
 					<div class="slide-1">
 						<div class="testimonial-text">
-							Wow they are really good
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus laborum recusandae cupiditate magni quia, dolor deserunt blanditiis omnis tenetur, dolore fugiat delectus. Libero repellendus reprehenderit earum, odio consectetur maxime!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fuga itaque nihil? Excepturi debitis aliquam unde eligendi adipisci ad esse
 						</div>
 						<div class="testimonial-user">
 							<span class="username">JOHN DOE</span>
@@ -719,7 +853,7 @@
 			</div>
 		</div>
 		<div class="block-5">
-			<div class="logo-block-5"></div>
+			<img class="logo-block-5" src="img/logos/logo white.svg">
 			<div class="block-5__section">
 				<div class="block-5__section__heading-1" data-aos="fade-up" data-aos-duration="750">Lets build something together</div>
 				<div class="block-5__section__sub-heading-1" data-aos="fade-up" data-aos-duration="750">Looking to start a project or just more information?</div>
@@ -728,7 +862,7 @@
 		</div>
 		<footer>
 			<div class="footer-bar"></div>
-			<div class="footer-logo">Deselk Studio Logo</div>
+			<img class="footer-logo" src="img/logos/deselk name white.svg">
 			<div class="footer-address">B1 Shahpura, BHOPAL, M.P,<br/> +91-9045109642 </div>
 			<ul class="menu-footer">
 				<li class="menu-footer-item facebook">FACEBOOK</li>
